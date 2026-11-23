@@ -1,7 +1,7 @@
 name: percent_calc
 description: "калькулятор процентов для самозанятых."
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.8.1
@@ -22,7 +22,12 @@ flutter_launcher_icons:
   ios: true
   image_path: "assets/images/icon.png"
   adaptive_icon_background: "#ffffff"
-  adaptive_icon_foreground: "assets/images/icon.png"
+  adaptive_icon_foreground: "assets/images/icon_adaptive.png"
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+    background_color: "#ffffff"
+    theme_color: "#6477b9"
 
 flutter:
   uses-material-design: true
