@@ -38,11 +38,11 @@ APK из релизов собран в `--release` и подписан debug-к
 
 ## Сборка из исходников
 
-Нужен Flutter (stable, проверено на 3.38.7 / Dart 3.10) и Android SDK.
+Нужен Flutter (stable, проверено на 3.38.7 / Dart 3.10), Android SDK и **JDK 17 или 21** — Gradle 8.12 не собирает под JDK 25+ (падает с загадочным «What went wrong: 25.0.4»).
 
 ```bash
 flutter pub get
-flutter build apk --release
+JAVA_HOME=/usr/lib/jvm/java-21-openjdk flutter build apk --release
 # готовый файл: build/app/outputs/flutter-apk/app-release.apk
 ```
 
